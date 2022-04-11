@@ -1,0 +1,137 @@
+/* Notes
+
+Colors:
+    red: #A77464
+    green: #8A9D8E
+
+    light red: #EDE4DF
+
+    green 1: #B4C0B6 darkest
+    green 2: #C2CCC3 lighter
+    green 3: #D0D7D1 light
+
+    dark grey: #2F2C2C -> footer
+    dark grey: #393635 -> fonts
+
+
+Fonts:
+
+Classico: 400
+Proxima Nova: 900, 700, 500, 300, 100 (Italic: 900, 700, 100)
+
+*/
+
+*{ 
+	Padding: 0;
+	Margin: 0;
+	Box-sizing: border-box;
+}
+
+[class*="grid-"], [class*="grid_"], [class~="grid"]{
+  margin:0;
+}
+
+[class*="col-"], [class*="col_"], [class~="col"]{
+  padding:0;
+}
+
+Html { scroll-behavior: smooth; }
+
+Img { max-width: 100%; }
+
+/* Temporary Styles */
+
+
+* {
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+}
+
+
+html, body {
+    padding: 0;
+    border: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+    border: 1px solid rgb(184, 92, 92)
+}
+
+.bg-image {
+    background-color: rgb(170, 170, 79);
+}
+
+.bg-image-bf {
+    background-color: rgb(170, 170, 79);
+    border: 5px solid white;
+    min-height: 30vh;
+}
+
+/* End temporary Styles */
+
+/* Utility Classes */
+
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+
+.padded   { padding: 5%; }
+.padded-lg { padding: 10%;}
+.padded-1 { padding: 1rem; }
+.padded-2 { padding: 2rem; }
+
+.margin-b-0 { margin: 0; }
+
+.bg-featured { background-color: #1c2a2c}
+.bg-dark { background-color: #24282b;}
+
+.light-text { color: white; }
+
+.underline { 
+    border-bottom: 2px solid white;
+    line-height: 0.7;
+}
+.uppercase { text-transform: uppercase;}
+
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+
+
+/* Typography Styles */
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+a {
+    display: inline-block;
+}
+
+
+/* really specific classs */
+
+.icon {
+    max-width: 5rem;
+}
+
+.quote-divider {
+    font-size: 5rem;
+}
+
+.author {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.email {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.footer-bar {
+    display: block;
+}
