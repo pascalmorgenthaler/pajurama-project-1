@@ -302,7 +302,7 @@ footer span {
 
 .button {
     border: 1.5px solid #393635;
-    padding: 0.3rem 6.5rem 0.3rem 0.3rem;
+    padding: 0.3rem 3rem 0.3rem 3rem;
     font-weight: 100;
     font-size: 1.3em;
     letter-spacing: 0.05rem;;
@@ -402,3 +402,48 @@ footer span {
 /* Background Position */
 .bg-pos-t-l { background-position: 10% 10%; }
 .bg-pos-b-r { background-position: 85% 85%; }
+
+
+
+/* Media Queryw */
+
+@media (max-width: 48em) {
+
+    .sm-center {text-align: center;}
+
+    .sm-padded-b-05 {padding-bottom: 0.5rem;}
+
+    .sm-padded {padding: 3%;}
+
+    .sm-margin {margin: 1rem;}
+
+    .sm-no-padding {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .sm-padded-t-1 {padding-top: 1rem;}
+}
+
+@media (max-width: 36em) {
+
+    .xs-text-sm { font-size: 3rem;}
+
+    .xs-border-r-0 { border-right: none; }
+    .xs-border-l-0 { border-left: none; }
+
+    .xs-padding-b {padding-bottom: 31.5%;}
+
+    .xs-padded-08 {padding-top: 0.8rem;}
+
+}
+
+
+@media (max-width: 25em) {
+
+    .xxs-text-sm { font-size: 0.9rem;}
+
+    .xxs-text-md { font-size: 2rem;}
+
+    .xxs-tall-40 { min-height: 40vh; }
+}
