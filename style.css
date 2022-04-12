@@ -192,6 +192,8 @@ p {
 
 /* Header & Footer */
 
+.text-xl { font-size: 7rem; }
+
 header {
     background-color: #A77464;
     color: white;
@@ -312,6 +314,27 @@ footer span {
     text-align: center;
 }
 
+.bg-image-bf-i {
+    background-color: #8A9D8E;
+    border: 7px solid white;
+    padding-bottom: 15.8%;
+}
+
+.bg-insta-1 { background-image: url('/images/image-gallery/insta-grid-1.jpg'); }
+.bg-insta-2 { background-image: url('/images/image-gallery/insta-grid-2.jpg'); }
+.bg-insta-3 { background-image: url('/images/image-gallery/insta-grid-3.jpg'); }
+.bg-insta-4 { background-image: url('/images/image-gallery/insta-grid-4.jpg'); }
+.bg-insta-5 { background-image: url('/images/image-gallery/insta-grid-5.jpg'); }
+.bg-insta-6 { background-image: url('/images/image-gallery/insta-grid-6.jpg'); }
+.bg-insta-7 { background-image: url('/images/image-gallery/insta-grid-7.jpg'); }
+.bg-insta-8 { background-image: url('/images/image-gallery/insta-grid-8.jpg'); }
+.bg-insta-9 { background-image: url('/images/image-gallery/insta-grid-9.jpg'); }
+.bg-insta-10 { background-image: url('/images/image-gallery/insta-grid-10.jpg'); }
+.bg-insta-11 { background-image: url('/images/image-gallery/insta-grid-11.jpg'); }
+.bg-insta-12 { background-image: url('/images/image-gallery/insta-grid-12.jpg'); }
+
+
+
 /* really specific classs */
 
 .icon {
@@ -354,7 +377,12 @@ footer span {
 
 }
 
+.box-shadow-1 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
+
+.line-height-14 {line-height: 1.4;}
 
 /*-------- Padding Utility Classes --------*/
 
@@ -460,9 +488,14 @@ footer span {
 
 @media (max-width: 48em) {
 
+    .sm-text-sm { font-size: 1.5rem;}
+    .sm-text-md { font-size: 4rem;}
+
     .sm-center {text-align: center;}
 
     .sm-padded-b-05 {padding-bottom: 0.5rem;}
+
+    .sm-margin-b-05 {margin-bottom: 0.5rem;}
 
     .sm-padded {padding: 3%;}
 
@@ -474,7 +507,13 @@ footer span {
     }
 
     .sm-padded-t-1 {padding-top: 1rem;}
+
+    .sm-padded-b-22-5 {padding-bottom: 22.5%;}
+
+
 }
+
+
 
 @media (max-width: 36em) {
 
@@ -487,6 +526,8 @@ footer span {
 
     .xs-padded-08 {padding-top: 0.8rem;}
 
+
+    .xs-padded-b-30-4 {padding-bottom: 30.4%;}
 }
 
 
@@ -497,4 +538,6 @@ footer span {
     .xxs-text-md { font-size: 2rem;}
 
     .xxs-tall-40 { min-height: 40vh; }
+
+    .xss-padded-t-8 {padding-top: 8rem;}
 }
