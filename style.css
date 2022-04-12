@@ -575,7 +575,9 @@ form input, form textarea {
 
     .xs-padded-b-30-4 {padding-bottom: 30.4%;}
 
-    .flex-flip-xs { flex-direction: column-reverse; }
+    .flex-flip-xs { 
+        flex-direction: column-reverse;
+        flex-wrap: nowrap; }
 
     .hide-xs {display: none;}
 }
