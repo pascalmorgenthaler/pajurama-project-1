@@ -92,6 +92,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 .bg-light {background-color:#EDE4DF}
 .bg-green {background-color:#8A9D8E}
 .bg-white {background-color:white}
+.bg-red {background-color:#A77464}
 
 .bg-green-1 { background-color: #B4C0B6; }
 .bg-green-2 { background-color: #C2CCC3; }
@@ -334,6 +335,10 @@ footer span {
 .bg-insta-12 { background-image: url('/images/image-gallery/insta-grid-12.jpg'); }
 
 
+/* Servicespage */
+
+.bg-services { background-image: url('/images/bg-services.jpg'); }
+
 
 /* really specific classs */
 
@@ -528,6 +533,8 @@ footer span {
 
 
     .xs-padded-b-30-4 {padding-bottom: 30.4%;}
+
+    .flex-flip-xs { flex-direction: column-reverse; }
 }
 
 
