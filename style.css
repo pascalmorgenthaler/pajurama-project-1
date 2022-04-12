@@ -339,6 +339,10 @@ footer span {
 
 .bg-services { background-image: url('/images/bg-services.jpg'); }
 
+/* Contactpage */
+
+.bg-contact { background-image: url('/images/bg-contact.jpg'); }
+
 
 /* really specific classs */
 
@@ -487,6 +491,43 @@ footer span {
 .bg-pos-t-l { background-position: 10% 10%; }
 .bg-pos-b-r { background-position: 85% 85%; }
 
+/* Forms */
+
+form input, form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 5px solid #393635;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  form input:focus, form textarea:focus{
+    border-color: #B4C0B6;
+  }
+  
+  textarea {
+    min-height: 15rem;
+  }
+  
+  form label {
+    margin-top: 1rem;
+    display: block;
+    color: #393635;
+  }
+  
+  form button {
+    background-color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 0;
+    letter-spacing: 0.2rem;
+    transition: 0.2s;
+  }
+
 
 
 /* Media Queryw */
@@ -535,6 +576,8 @@ footer span {
     .xs-padded-b-30-4 {padding-bottom: 30.4%;}
 
     .flex-flip-xs { flex-direction: column-reverse; }
+
+    .hide-xs {display: none;}
 }
 
 
@@ -547,4 +590,8 @@ footer span {
     .xxs-tall-40 { min-height: 40vh; }
 
     .xss-padded-t-8 {padding-top: 8rem;}
+
+    .xss-padded-t-0 {padding-top: 0;}
+
+
 }
