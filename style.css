@@ -339,6 +339,10 @@ footer span {
 
 .bg-services { background-image: url('/images/bg-services.jpg'); }
 
+.bg-services-1 { background-image: url('/images/bg-services-1.jpg'); }
+.bg-services-2 { background-image: url('/images/bg-services-2.jpg'); }
+.bg-services-3 { background-image: url('/images/bg-services-3.jpg'); }
+
 /* Contactpage */
 
 .bg-contact { background-image: url('/images/bg-contact.jpg'); }
