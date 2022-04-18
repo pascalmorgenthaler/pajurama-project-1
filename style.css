@@ -565,7 +565,9 @@ form input, form textarea {
     color: white;
   }
 
-
+.mob-show {
+    display: none;
+}
 
 /* Media Queryw */
 
