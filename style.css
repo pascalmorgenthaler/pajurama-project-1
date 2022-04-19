@@ -386,6 +386,7 @@ footer span {
     font-weight: 100;
     font-size: 1.3em;
     letter-spacing: 0.05rem;
+    color: #393635;
     
 
 }
@@ -414,6 +415,10 @@ footer span {
 .absolute { position: absolute; }
 .relative { position: relative; }
 .fixed { position: fixed; }
+
+.flex-flip{
+    flex-flow:row-reverse wrap;
+  }
 
 
 /*-------- Padding Utility Classes --------*/
@@ -636,9 +641,6 @@ form input, form textarea {
 
     .xs-padded-b-30-4 {padding-bottom: 30.4%;}
 
-    .flex-flip-xs { 
-        flex-direction: column-reverse;
-        flex-wrap: nowrap; }
 
     .hide-xs {display: none;}
 }
