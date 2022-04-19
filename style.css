@@ -397,6 +397,25 @@ footer span {
 
 .line-height-14 {line-height: 1.4;}
 
+.flex { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-down {
+    font-size: 5rem;
+    color: inherit;
+    display: block;
+    position: absolute;
+    bottom: 3%;
+}
+
+.absolute { position: absolute; }
+.relative { position: relative; }
+.fixed { position: fixed; }
+
+
 /*-------- Padding Utility Classes --------*/
 
 

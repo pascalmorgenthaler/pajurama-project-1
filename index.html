@@ -20,7 +20,6 @@
         <!-- My own custom stylesheet -->
         <link rel="stylesheet" href="/style.css">
 
-        <script sec="/main.js"> </script>
 
 </head>
 
@@ -54,16 +53,13 @@
     </nav>
 
     <!-------------------------------- Panoramic Banner ----------------------------------->
-    <section class="grid tall-80 bg-image light-text xxs-tall-40">
-        <div class="col-12-middle center">
-            <div>
-                  <h2 class="be-panoramic xs-text-sm xxs-text-md"> be <span class="underline">panoramic.</span> </h2>
-            </div>
-        </div>
+    <section class="tall-80 bg-image light-text xxs-tall-40 flex relative">    
+            <h2 class="be-panoramic xs-text-sm xxs-text-md"> be <span class="underline">panoramic.</span> </h2> 
+            <a href="#perspective" class="arrow-down mob-hide"> &#8595; </a>   
     </section>
 
     <!-------------------------------- Give Perspective ----------------------------------->
-    <section class="grid-spaceAround padded">
+    <section class="grid-spaceAround padded" id="perspective">
 
         <div class="col-4_sm-6_xs-8-middle sm-padded">
             <img src="/images/homepage-couple-1.jpg">
@@ -177,7 +173,10 @@
         </div>
     </footer>
 
+    <!------ JQuery CDN ------>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/main.js"> </script>
 
 </body>
 

@@ -27,18 +27,29 @@
     <!-------------------------------- Menubar ----------------------------------->
     <header class="grid-middle padded-1">
 
-        <div class="col-6_sm-12 sm-center sm-padded-b-05">
+        <div class="col-6_sm-12">
             <h1> Pajurama </h1>
         </div>
 
-        <nav class="col-6_sm-12 right sm-center">
+        <nav class="col-6_sm-12 right mob-hide sm-center">
             <a href="/index.html" class="xxs-text-sm"> Home </a>
             <a href="/about.html" class="xxs-text-sm"> About </a>
             <a href="/services.html" class="xxs-text-sm"> Services </a>
             <a href="/contact.html" class="xxs-text-sm"> Contact </a>
         </nav>
 
+        <div class="col-6-middle mob-show right"> 
+            <a class="hamburger-button mob-show"> &#9776; </a>
+        </div>
+
     </header>
+
+    <nav class="mob-menubar">
+        <a href="/index.html" class="xxs-text-sm"> Home </a>
+        <a href="/about.html" class="xxs-text-sm"> About </a>
+        <a href="/services.html" class="xxs-text-sm"> Services </a>
+        <a href="/contact.html" class="xxs-text-sm"> Contact </a>
+    </nav>
 
     <!-------------------------------- Services Banner ----------------------------------->
     <section class="grid tall-60 bg-image bg-services light-text xxs-tall-40">
@@ -165,6 +176,10 @@
         </div>
     </footer>
 
+    <!------ JQuery CDN ------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/main.js"> </script>
 
 </body>
 
