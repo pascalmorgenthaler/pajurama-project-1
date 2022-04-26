@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
   $('.hamburger-button').click(function(){
   
-    $('.mob-menubar').slideToggle();
+    $('.mob-menubar').toggleClass("active");
     
   });
 

@@ -416,9 +416,16 @@ footer span {
 .relative { position: relative; }
 .fixed { position: fixed; }
 
-.flex-flip{
+/*
+.flex-flip:nth-child(2n) {
     flex-flow:row-reverse wrap;
   }
+*/
+
+.flex-flip {
+    flex-flow:row-reverse wrap;
+  }
+
 
 
 /*-------- Padding Utility Classes --------*/
@@ -573,16 +580,24 @@ form input, form textarea {
   }
   
   .mob-menubar {
-    display: none;
-    top: 0;
+    top: -100%;
     right: 0;
-    bottom: 0;
     left: 0;
+    bottom: 100vh;
     background-color: #2F2C2C;
     position: fixed;
     z-index: 1;
+    transition: 2s;
   }
   
+.mob-menubar.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+}
+
   .mob-menubar a {
     display: block;
     text-align: center;

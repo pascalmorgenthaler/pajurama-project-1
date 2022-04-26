@@ -46,7 +46,7 @@ services:
     <section class="grid-spaceAround padded">
 
         {% for item in page.services %}
-        <div class="grid-spaceAround">
+        <div class="grid-spaceAround {% cycle "", "flex-flip"%}">
             <div class="col-5_sm-6_xs-8-middle sm-padded">
                 <img src="{{ item.image }}">
             </div>
