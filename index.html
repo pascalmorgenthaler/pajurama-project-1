@@ -17,9 +17,42 @@ my_variable: promo-2.html
             <a href="#perspective" class="arrow-down mob-hide" data-aos="fade-up" data-aos-delay="200"> &#8595; </a>  
     </section>
 
+
+    <!------------------------------------------------------------------- Test  ------------------------------------------------------->
+    <!--------------------------- page variables ---------------------->
     {% if page.my_variable %}
         {% include {{ page.my_variable }} %}
     {% endif %}
+
+    <!-------------------------- Data Files  ------------------------->
+    <h2> {{ site.data.team.about }} <h2> 
+        <p> We have a dream team of {{ site.data.team.about.number-of-employees }}, maybe you could be number {{ site.data.team.about.number-of-employees | plus: 1 }}? 
+        </p>
+        <a href="#"> {{ site.data.team.tagline }} </a>
+    <h3>You can get our Product for {{ site.data.team.stats.stock-price }}</h3>
+
+    {% for person in site.data.team.team-members %}
+
+     <h2> {{ person.name }} </h2> 
+     <h3> {{ person.title }} </h3>
+
+    {% endfor %}
+
+    <h1> Our Marketing Team </h1> 
+
+    {% assign marketing-team = site.data.team.team-members | where: "team","Marketing" %}
+
+    {% for person in marketing-team %}
+
+	    <h2> {{ person.name }} </h2> 
+	    <h3> {{ person.title }} </h3>
+
+    {% endfor %}
+
+    <!-------------------------------- Youtube Include ----------------------------------->
+    {% include youtube.html youtube_id="jRkgW2UlzZE" %}
+    <!-------------------------------------------------------------------Test End--------------------------------------------------->
+
 
     <!-------------------------------- Give Perspective ----------------------------------->
     <section class="grid-spaceAround padded" id="perspective">
@@ -86,9 +119,6 @@ my_variable: promo-2.html
 
     </section>
 
-
-     <!-------------------------------- Youtube Include ----------------------------------->
-    {% include youtube.html youtube_id="jRkgW2UlzZE" %}
 
 
     <!-------------------------------- Quote ----------------------------------->

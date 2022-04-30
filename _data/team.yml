@@ -1,0 +1,30 @@
+about: We are a results-driven marketing team 
+number-of-employees: 7
+tagline: Grow with Us
+
+stats:
+  stock-price: $100 per share 
+  next-meeting: 1st September 2022
+  revenue: 6000000
+  growth: 12%
+
+team-members:
+  - name: Sarah
+    title: CEO
+    team: Executive
+    
+  - name: Joe
+    title: Manager
+    team: Marketing 
+    
+  - name: Lucy
+    title: Creative Director
+    team: Marketing 
+    
+  - name: Aram
+    title: Photographer
+    team: Marketing 
+    
+  - name: Dayu
+    title: Accountant
+    team: Finance
