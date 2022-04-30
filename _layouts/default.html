@@ -1,99 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
+   
+    <head> {% include head.html %}</head>
 
-        <!-- The title for SEO & browser tabs -->
-        <title> Pajurama Creative Agency </title>
+    <body>
 
-        <!-- Viewport meta tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         {% include mobmenubar.html %}
 
-        <!-- Gridlex -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- Adobe Fonts  -->
-        <link rel="stylesheet" href="https://use.typekit.net/cwz2bug.css">
-
-        <!-- Animate on scroll -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-        <!-- Lightgallery for pop-ups  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- My own custom stylesheet -->
-        <link rel="stylesheet" href="/style.css">
-
-
-</head>
-
-<body>
-
-    <nav class="mob-menubar">
-        <div>
-        <a href="/index.html" class="xxs-text-sm"> Home </a>
-        <a href="/about.html" class="xxs-text-sm"> About </a>
-        <a href="/services.html" class="xxs-text-sm"> Services </a>
-        <a href="/gallery.html" class="xxs-text-sm"> Gallery </a>
-        <a href="/contact.html" class="xxs-text-sm"> Contact </a>
-        </div>
-    </nav>
-
-    {{ content }}
+         {{ content }}
 
 
      <!-------------------------------- Pre-Footer ----------------------------------->
-     <section class="grid padded-b-1">
-        <div class="col-2_xs-4 bg-image bg-image-bf xs-padding-b bg-pre-1 border-l-0"></div>
-        <div class="col-2_xs-4 bg-image bg-image-bf bg-pre-2"></div>
-        <div class="col-2_xs-4 bg-image bg-image-bf bg-pre-3 xs-border-r-0"></div>
-        <div class="col-2_xs-4 bg-image bg-image-bf xs-padding-b bg-pre-4 xs-border-l-0"></div>
-        <div class="col-2_xs-4 bg-image bg-image-bf bg-pre-5"></div>
-        <div class="col-2_xs-4 bg-image bg-image-bf bg-pre-6 border-r-0"></div>
-    </section>
+        {% include site-prefooter.html %}
 
     <!-------------------------------- Footer ----------------------------------->
-    <footer class="grid-spaceBetween padded padded-b-0">
+        {% include site-footer.html %}
 
-        <div class="col-3_sm-5_xs-12-middle">
-            <h1 class="footer-h1"> Pajurama <br> <span class="footer-ca"> Creative Agency </span></h1>
-            <p class="margin-b-0 padded-t-5 sm-padded-t-1"> Based in Switzerland. </p>
-            <p class="margin-b-05"> Constantly Traveling. </p>
-            <a href="mailto:pajurama@gmail.com" class="email"> pajurama@gmail.com </a>
-        </div>
-
-        <nav class="col-3_xs-12-middle">
-            <p class="links-footer underline xs-padded-08"> Links </p>
-            <a href="/index.html" class="footer-bar"> Home </a>
-            <a href="/about.html" class="footer-bar"> About </a>
-            <a href="/services.html" class="footer-bar"> Services </a>
-            <a href="/contact.html" class="footer-bar"> Contact </a>
-        </nav>
-
-        <div class="col-12-middle center padded-t-1">
-            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="#"> <i class="fa-brands fa-pinterest"></i> </a>
-            <a href="#"> <i class="fa-brands fa-youtube"></i> </a>   
-        </div>
-
-        <div class="col-12-middle center padded-t-2 padded-b-05">
-            <p> Copyright 2022 </p>
-        </div>
-    </footer>
-
-    <!------ JQuery CDN ------>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Animate on scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!--- Light gallery pop up ----->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.3/lightgallery.min.js"></script>
-
-    <!--  our custom Javascript file -->
-    <script src="/main.js"> </script>
+    <!------------------------------Script ---------------------------->
+        {% include body-scripts.html %}
 
 </body>
 

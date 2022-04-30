@@ -1,6 +1,8 @@
 ---
 layout: default
+my_variable: promo-2.html
 ---
+<!--- Now I only have to change the number to pull in anothr include (prebuilt promo banner)-->
 
     <!-------------------------------- Menubar ----------------------------------->
     <header class="grid-middle padded-1">
@@ -14,6 +16,10 @@ layout: default
             <h2 class="be-panoramic xs-text-sm xxs-text-md editable" data-aos="fade-in" data-aos-duration="1000"> be <span class="underline">panoramic.</span> </h2> 
             <a href="#perspective" class="arrow-down mob-hide" data-aos="fade-up" data-aos-delay="200"> &#8595; </a>  
     </section>
+
+    {% if page.my_variable %}
+        {% include {{ page.my_variable }} %}
+    {% endif %}
 
     <!-------------------------------- Give Perspective ----------------------------------->
     <section class="grid-spaceAround padded" id="perspective">
@@ -79,6 +85,10 @@ layout: default
         </div>
 
     </section>
+
+
+     <!-------------------------------- Youtube Include ----------------------------------->
+    {% include youtube.html youtube_id="jRkgW2UlzZE" %}
 
 
     <!-------------------------------- Quote ----------------------------------->
