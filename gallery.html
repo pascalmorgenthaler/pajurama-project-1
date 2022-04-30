@@ -1,42 +1,44 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: bg-featured
 gallery:
-   -
-      column-size: col-12
-      aspect-ratio: landscape-wide
-      background_image: /images/image-gallery/insta-grid-2.jpg
-   -
-      column-size: col-4_sm-12
-      aspect-ratio: square
-      background_image: /images/image-gallery/insta-grid-5.jpg
-   -
-      column-size: col-4_sm-12
-      aspect-ratio: square
-      background_image: /images/image-gallery/insta-grid-4.jpg
-   -
-      column-size: col-4_sm-12
-      aspect-ratio: square
-      background_image: /images/image-gallery/insta-grid-3.jpg
-   -
-      column-size: col-12
-      aspect-ratio: landscape
-      background_image: /images/image-gallery/insta-grid-7.jpg
-   -
-      column-size: col-3
-      aspect-ratio: square
-      background_image: /images/image-gallery/insta-grid-8.jpg
-   -
-      column-size: col-3
-      aspect-ratio: square
-      background_image: /images/image-gallery/insta-grid-10.jpg
-   -
-      column-size: col-3
-      aspect-ratio: square
-      background_image: /images/image-gallery/insta-grid-11.jpg
-   -
-      column-size: col-3
-      aspect-ratio: square
-      background_image: /images/image-gallery/insta-grid-6.jpg
+  - column-size: col-12
+    aspect-ratio: landscape-wide
+    background_image: /images/image-gallery/insta-grid-2.jpg
+    type: dog
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/image-gallery/insta-grid-5.jpg
+    type: cat
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/image-gallery/insta-grid-4.jpg
+    type: rabbit
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/image-gallery/insta-grid-3.jpg
+    type: dog
+  - column-size: col-12
+    aspect-ratio: landscape
+    background_image: /images/image-gallery/insta-grid-7.jpg
+    type: dog
+  - column-size: col-3
+    aspect-ratio: square
+    background_image: /images/image-gallery/insta-grid-8.jpg
+    type: dog
+  - column-size: col-3
+    aspect-ratio: square
+    background_image: /images/image-gallery/insta-grid-10.jpg
+    type: dog
+  - column-size: col-3
+    aspect-ratio: square
+    background_image: /images/image-gallery/insta-grid-11.jpg
+    type: dog
+  - column-size: col-3
+    aspect-ratio: square
+    background_image: /images/image-gallery/insta-grid-6.jpg
+    type: dog
 ---
 
 <!-------------------------------- Menubar ----------------------------------->
@@ -47,10 +49,37 @@ gallery:
      </header>
 
 
+
+
+
+    <!------------------------ clickable light gallery ----------------------->
+
+    {% if page.popup-gallery == true %}
+
+
+    <section class="padded {{page.gallery-background}}">
+        <h2 class="center"> Pop Up Gallery </h2>
+        <div class="gallery grid" id="lightgallery">
+  
+            {% for item in page.gallery %}
+            {% if item.type == 'rabbit' or item.type == 'cat' %} <!-- != means does not equal dog, so everything else-->
+            <a class="{{item.column-size}} gallery-container" href="{{item.background_image}}"> 
+                 <div class="bg-image {{item.aspect-ratio}}" 
+                      style="background-image: url('{{item.background_image}}');"> 
+                </div>
+            </a>
+            {% endif %}
+            {% endfor %}
+    
+        </div>
+    </section>
+
+    {% else %}
+
      <!------------------------------- standard Responsive Image Gallery -------------------------------->
 
-     <h2 class="center padded-t-5"> Standard Gallery </h2>
-     <section class="padded">
+     <section class="padded {{page.gallery-background}}">
+        <h2 class="center"> Standard Gallery </h2>
         <div class="gallery grid">
   
             {% for item in page.gallery %}
@@ -59,29 +88,20 @@ gallery:
                       style="background-image: url('{{item.background_image}}');"> 
                 </div>
             </div>
+
             {% endfor %}
         </div>
     </section>
 
-    <!------------------------ clickable light gallery ----------------------->
-    <h2 class="center"> Pop Up Gallery </h2>
-    <section class="padded">
-        <div class="gallery grid" id="lightgallery">
-  
-            {% for item in page.gallery %}
-            <a class="{{item.column-size}} gallery-container" href="{{item.background_image}}"> 
-                 <div class="bg-image {{item.aspect-ratio}}" 
-                      style="background-image: url('{{item.background_image}}');"> 
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </section>
+    {% endif %}
+
+
+
 
     <!------------------------ clickable light gallery 2 ----------------------->
-    <h2 class="center"> Pop Up Gallery 2 </h2>
 
     <section class="padded">
+        <h2 class="center"> Pop Up Gallery 2 </h2>
         <div class="gallery grid" id="lightgallery-2">
 
             <a class="button center" href="/images/image-gallery/insta-grid-5.jpg" title="Romantic Travel Couple 1"> 
