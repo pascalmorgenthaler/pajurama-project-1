@@ -347,6 +347,39 @@ footer span {
 
 .bg-contact { background-image: url('/images/bg-contact.jpg'); }
 
+/* Responsive Image Gallery */
+
+/* Partial class selector -> selects everything that has this word in it */
+.gallery [class*="col-"] {
+    padding: 1%;
+    margin: 0;
+  }
+  
+  
+  /* Gallery - Background Images */
+  
+  .bg-img-1 {
+     background-image: url('https://source.unsplash.com/b57RqS-nQ1c');
+  }
+  
+  .bg-img-2 {
+     background-image: url('https://source.unsplash.com/7kueosQ7Inc');
+  }
+  
+  .bg-img-3 {
+     background-image: url('https://source.unsplash.com/Olg60_RTPc8');
+  }
+  .bg-img-4 {
+     background-image: url('https://source.unsplash.com/ZHr2TzM1-hk');
+  }
+  .bg-img-5 {
+     background-image: url('https://source.unsplash.com/xmksM4em7a0');
+  }
+
+  .mixed-grid-adjust { 
+    padding-bottom: 136%;
+    margin: 0;
+}
 
 /* really specific classs */
 
