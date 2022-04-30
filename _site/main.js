@@ -13,6 +13,23 @@ $( document ).ready(function() {
 });
 
 
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  download: false,
+  animateThumb: true,
+  thumbnail: true,
+  zoomFromOrigin: true,
+  allowMediaOverlap: true,
+  toggleThumb: true,
+
+});
+
+
+lightGallery(document.getElementById('lightgallery-2'), {
+  speed: 500,
+  download: false
+});
+
 
 
 

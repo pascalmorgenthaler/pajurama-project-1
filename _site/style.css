@@ -381,6 +381,31 @@ footer span {
     margin: 0;
 }
 
+/* Pop Up Light Gallery */
+
+.lg-backdrop.in {
+    opacity: 0.94;
+  }
+
+.lg-backdrop {
+    background-color: #2F2C2C;
+}
+
+.lg-toolbar .lg-icon {
+    color: white;
+}
+
+.lg-counter {
+    color: white;
+}
+
+.lg-next, .lg-prev {
+    color: white;
+}
+
+.lg-sub-html {
+    background-color: #8A9D8E;
+}
 /* really specific classs */
 
 .icon {
