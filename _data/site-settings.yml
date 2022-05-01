@@ -1,11 +1,8 @@
 
 
 design:
-  red: '#A77464'
-  green: '#8A9D8E'
-  light-red: '#EDE4DF'
-  green-1: '#B4C0B6' 
-  green-2: '#C2CCC3' 
-  green-3: '#D0D7D1'
-  dark-grey: '#2F2C2C'
-  dark-grey: '#393635'
+  red_color: '#A77464'
+  green_color: '#8A9D8E'
+  green-1_color: '#B4C0B6' 
+  green-2_color: '#C2CCC3' 
+  green-3_color: '#D0D7D1'

@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 .bg-featured { background-color: #1c2a2c}
 .bg-dark{ background-color: #24282b;}
 .bg-light {background-color:#EDE4DF}
-.bg-green {background-color:var(--green);}
+.bg-green {background-color: var(--green);}
 .bg-white {background-color:white;}
 .bg-red {background-color: var(--red);}
 
