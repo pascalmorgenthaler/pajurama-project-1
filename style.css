@@ -88,15 +88,14 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 .bg-featured { background-color: #1c2a2c}
 .bg-dark{ background-color: #24282b;}
-
 .bg-light {background-color:#EDE4DF}
-.bg-green {background-color:#8A9D8E}
-.bg-white {background-color:white}
-.bg-red {background-color:#A77464}
+.bg-green {background-color:var(--green);}
+.bg-white {background-color:white;}
+.bg-red {background-color: var(--red);}
 
-.bg-green-1 { background-color: #B4C0B6; }
-.bg-green-2 { background-color: #C2CCC3; }
-.bg-green-3 { background-color: #D0D7D1; }
+.bg-green-1 { background-color: var(--green-1); }
+.bg-green-2 { background-color: var(--green-2); }
+.bg-green-3 { background-color: var(--green-3); }
 
 .light-text { color: white; }
 
