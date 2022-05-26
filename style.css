@@ -213,6 +213,11 @@ footer span {
     font-size: 1.4rem;
 }
 
+.portfolio {
+    column-count: 3;
+    column-gap: 5px;
+}
+
 .footer-h1 {
     font-size: 3.3rem;
     font-weight: 900;
