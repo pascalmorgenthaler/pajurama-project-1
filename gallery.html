@@ -58,9 +58,9 @@ gallery:
     {% if page.popup-gallery == true %}
 
 
-    <section class="portfolio padded {{page.gallery-background}}">
+    <section class="padded {{page.gallery-background}}">
         <h2 class="center"> Pop Up Gallery </h2>
-        <div class="gallery grid" id="lightgallery">
+        <div class="gallery portfolio" id="lightgallery">
   
             {% for item in page.gallery %}
             {% if item.type == 'rabbit' or item.type == 'cat' %} <!-- != means does not equal dog, so everything else-->

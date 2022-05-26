@@ -720,6 +720,10 @@ form input, form textarea {
 
 
     .hide-xs {display: none;}
+
+    .portfolio {
+        column-count: 1;
+    }
 }
 
 
